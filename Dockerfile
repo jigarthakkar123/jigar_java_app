@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jre
 WORKDIR /app
-COPY jigar_java_app.jar app.jar
+COPY target/jigar_java_app.jar app.jar
 CMD ["java", "-jar", "app.jar"]
 EXPOSE 9090
